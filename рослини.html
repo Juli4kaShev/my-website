@@ -1,94 +1,84 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Рослини в акваріумі</title>
-  <style>
-    :root{
-      --bg-1: #eaf6ff;
-      --bg-2: #d8f0ff;
-      --accent: #3aa0ff;
-      --accent-dark: #0f63b8;
-      --card: #ffffff;
-      --muted: #5b6b7a;
-    }
-    body{
-      margin:0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(180deg,var(--bg-1),var(--bg-2));
-      color:#0b2540;
-    }
-    header{
-      background: linear-gradient(90deg,var(--accent),var(--accent-dark));
-      color:#fff;
-      padding:1.5rem 1rem;
-      text-align:center;
-    }
-    header h1{margin:0;font-size:1.8rem}
-    .container{max-width:1000px;margin:2rem auto;padding:0 1rem}
-    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
-    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1)}
-    h2{color:var(--accent-dark);margin-top:1rem}
-    ul{list-style:disc;padding-left:1.2rem}
-    footer{text-align:center;margin:2rem 0;color:var(--muted);font-size:0.9rem}
-    .line2{
-    color: aliceblue;
-    text-align: center;
-    
-
-padding: 10px;
-}
-
-
-.line2 a{
-
-flex-direction: row;
-width: 150px;
-padding: 5px;
-margin-left: 10px;
-margin-right: 10px;
-margin-bottom: 10px;
-background-color: rgb(111, 187, 241); 
-color: rgb(255, 255, 255);
-text-align: center;
-text-decoration: none; 
-}
-.line2 a:hover{ 
-background-color:rgb(178, 135, 218); 
-color: rgb(63, 21, 101);
-}
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рослини в акваріумі</title>
+    <style>
+        :root{
+            --bg-1: #eaf6ff;
+            --bg-2: #d8f0ff;
+            --accent: #3aa0ff;
+            --accent-dark: #0f63b8;
+            --card: #ffffff;
+            --muted: #5b6b7a;
+        }
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg,var(--bg-1),var(--bg-2));
+            color:#0b2540;
+        }
+        header{
+            background: linear-gradient(90deg,var(--accent),var(--accent-dark));
+            color:#fff;
+            padding:1.5rem 1rem;
+            text-align:center;
+        }
+        header h1{margin:0;font-size:1.8rem}
+        .container{max-width:1000px;margin:2rem auto;padding:0 1rem}
+        .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+        .gallery img{width:100%;height:160px;object-fit:cover;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1)}
+        h2{color:var(--accent-dark);margin-top:1rem}
+        ul{list-style:disc;padding-left:1.2rem}
+        .line2{
+            color: aliceblue;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        .line2 a{
+            display: block;
+            width: 150px;
+            padding: 5px;
+            margin: 0 10px 10px 10px;
+            background-color: rgb(111, 187, 241); 
+            color: white;
+            text-align: center;
+            text-decoration: none; 
+        }
+        .line2 a:hover{ 
+            background-color: rgb(178, 135, 218); 
+            color: rgb(63, 21, 101);
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Рослини в акваріумі</h1>
-    <p>Красивий підводний світ</p>
-  </header>
+    <header>
+        <h1>Рослини в акваріумі</h1>
+        <p>Красивий підводний світ</p>
+    </header>
 
-  <main class="container">
-  
-    <div class="gallery">
-      <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHz2gY7b3uSJ2Puvw9VoxV455GLq7E1TCpjw6y5CM0RNwJ5R2O17aFnKa9S2id2-0MwC94g2tO81xD8tyOZBfHolMVQr4Nnp7i7alUJQ" alt="Рослини в акваріумі">
-      <img src="https://blog.tetra.net/ru/ru/wp-content/uploads/2021/04/anubias-bartera-mozhet-proizrastat-na-koryagah.jpg" alt="Акваріум з рибками і рослинами">
-      <img src="https://fanfishka.ru/uploads/posts/2018-03/1520851508_02.jpg" alt="Різні акваріумні рослини">
-      <img src="https://fanfishka.ru/uploads/posts/2018-03/1520267164_03.jpg" alt="Акваріумні рослини крупним планом">
-    </div>
+    <main class="container">
+        <div class="gallery">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHz2gY7b3uSJ2Puvw9VoxV455GLq7E1TCpjw6y5CM0RNwJ5R2O17aFnKa9S2id2-0MwC94g2tO81xD8tyOZBfHolMVQr4Nnp7i7alUJQ" alt="Рослини в акваріумі">
+            <img src="https://blog.tetra.net/ru/ru/wp-content/uploads/2021/04/anubias-bartera-mozhet-proizrastat-na-koryagah.jpg" alt="Акваріум з рибками і рослинами">
+            <img src="https://fanfishka.ru/uploads/posts/2018-03/1520851508_02.jpg" alt="Різні акваріумні рослини">
+            <img src="https://fanfishka.ru/uploads/posts/2018-03/1520267164_03.jpg" alt="Акваріумні рослини крупним планом">
+        </div>
 
-    <h2>Популярні рослини</h2>
-    <ul>
-      <li>1. Мох яванський</li>
-      <li>2. Анубіас</li>
-      <li>3. Ехінодорус</li>
-      <li>4. Криптокорина</li>
-    </ul>
-    <center>
-    <div class="line2">
-    <a href="index.html">Назад до акваріуму</a></div>
-  </center>
-  </main>
+        <h2>Популярні рослини</h2>
+        <ul>
+            <li>1. Мох яванський</li>
+            <li>2. Анубіас</li>
+            <li>3. Ехінодорус</li>
+            <li>4. Криптокорина</li>
+        </ul>
 
-  
+        <div class="line2">
+            <a href="index.html">Назад до акваріуму</a>
+        </div>
+    </main>
 </body>
 </html>
