@@ -1,222 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
-    <title>Домашній акваріум</title>
     <meta charset="UTF-8">
+    <title>Домашній акваріум</title>
+    <style>
+       body{
+           margin: 0;
+           padding: 0; 
+           font-size: 14pt; 
+           font-family: Calibri;
+       }
+       .content{
+           max-width: 1000px; 
+           background-color: #e0e0f8; 
+           margin: 0 auto;
+       }
+       .line1{
+           display: flex;
+           align-items: center; 
+           justify-content: space-between;
+           flex-wrap: wrap;
+           background-color: blueviolet;
+           padding: 10px;
+       }
+       .line1_block{
+           flex-basis: 450px;
+           flex-grow: 1;  
+           align-items: center;
+       }
+       .head{
+           width: 100%;
+       }
+       .line1 h1{
+           font-size: 40px;
+           font-family: Arial;
+           padding-bottom: 10px;
+           color: white;
+           margin-left: 20px;
+       }
+       .line1 h2{
+           font-size: 30px;
+           font-family: Arial;
+           color: rgb(60, 215, 239);
+           padding-bottom: 10px;
+           letter-spacing: 8px;
+           margin-left: 20px;
+       }
+       .logo{
+           margin-left: 150px;
+           margin-top: 20px;
+       }
+       .line2{
+           color: aliceblue;
+           text-align: center;
+           background-color: blueviolet;
+           display: flex;
+           flex-direction: row;
+           padding: 10px;
+       }
+       .line2 a{
+           display: block;
+           width: 150px;
+           padding: 5px;
+           margin: 0 10px 10px 10px;
+           background-color: rgb(111, 187, 241); 
+           color: white;
+           text-align: center;
+           text-decoration: none; 
+       }
+       .line2 a:hover{ 
+           background-color: rgb(178, 135, 218); 
+           color: rgb(63, 21, 101);
+       }
+       p{
+           text-align: justify;
+           text-indent: 30px;
+           color: rgb(85, 25, 141);
+           margin-bottom: 10px;
+       }
+       .line3 h2{
+           font-size: 20px;
+           font-family: Arial;
+           color: rgb(86, 29, 140);
+           text-align: center;
+       }
+       .line3{
+           margin: 10px;
+       }
+       .line4{
+           display: flex; 
+           justify-content: space-between;
+           flex-wrap: wrap; 
+           background-color: rgba(203, 172, 232, 0.957); 
+           padding: 20px;
+       }
+       .line4_block {
+           width: 25%;
+           min-height: 250px;
+           background-color: #ffffff;
+           border: 3px solid #dd5fcc;
+           margin: 10px;
+           padding: 15px;
+           text-align: center;
+       }
+       .line4 h2{
+           color: rgb(199, 181, 217);
+           background: rgb(63, 21, 101);
+           font-family: Arial;
+           padding: 2px;
+       }
+       .line4 h3{
+           color: rgb(63, 21, 101);
+           font-family: Arial;
+           padding: 5px 0px;
+       }
+       .line4 a{
+           width: 350px;
+           padding: 5px;
+           background-color: rgb(111, 187, 241); 
+           color: white;
+           text-align: center;
+           text-decoration: none; 
+       }
+       .line4 a:hover{ 
+           background-color: rgb(178, 135, 218); 
+           color: rgb(63, 21, 101);
+       }
+       .line4 p{
+           font-family: Arial, Helvetica, sans-serif;
+           color: rgb(119, 60, 173);
+       }
+       .line5 {
+           display: flex;
+           justify-content: space-between;
+           flex-wrap: wrap;
+           padding: 20px;
+           background-color: rgba(214, 189, 228, 0.896);
+       }
+       .line5_block {
+           width: 45%;
+           background-color: rgba(214, 189, 228, 0.896);
+           padding: 15px;
+           text-align: center;
+           border-radius: 5px;
+           overflow: hidden;
+       }
+       .line5 h2 {
+           color: #d5d4d9;
+           background-color: blueviolet;
+       }
+       .line5 h3 {
+           color: blueviolet;
+       }
+       .line5 img {
+           float: left;
+           width: 50%;
+           height: auto;
+           margin-top: 10px;
+           margin-right: 15px;
+           border-radius: 4px;
+       }
+       .line5 a {
+           display: block;
+           width: 150px;
+           margin: 10px auto;
+           padding: 5px;
+           background-color: #928df1;
+           color: white;
+           text-align: center;
+           text-decoration: none;
+       }
+       .line5 a:hover {
+           background-color: #bb72d5;
+           color: #2e0b3a;
+       }
+       .line6 {
+           text-align: center;
+           padding: 5px;
+           background-color: blueviolet;
+           color: white;
+           font-size: 30pt;
+       }
+       .line6 h5 {
+           font-size: 30px;
+           font-weight: normal;
+           letter-spacing: 1px;
+       }
+    </style>
 </head>
 <body>
-    <style type="text/css">
-       body{
-    margin: 0;
-    padding: 0; 
-    font-size: 14pt; 
-    font-family: Calibri;
-       }
-.content{
-max-width: 1000px; 
-background-color: #e0e0f8; 
-margin: 0px auto;
-}
-
-.line1{
-display: flex;
-align-items: center; 
-justify-content: space-between;
-flex-wrap: wrap;
-background-color: blueviolet;
-padding: 10px;
-}
-.line1_block{
-flex-basis: 450px;
-flex-grow: 1;  
-align-items: center;
-
-}
-.head{
-    width: 100%;
-}
-.line1 h1{
-size: 40px;
-font-family: Arial;
-padding-bottom: 10px;
-color: white;
-margin-left: 20px;
-}
-.line1 h2{
-size: 30px;
-font-family: Arial;
-color: rgb(60, 215, 239);
-padding-bottom: 10px;
-letter-spacing: 8px;
-margin-left: 20px;
-}
-.logo{
-    margin-left: 150px;
-    margin-top: 20px;
-}
-.he{
-    align-items: flex-start;
-}
-
-.line2{
-    color: aliceblue;
-    text-align: center;
-    background-color: blueviolet;
-    display: flex;
-flex-direction: row;
-padding: 10px;
-}
-
-
-.line2 a{
-display: block;
-flex-direction: row;
-width: 150px;
-padding: 5px;
-margin-left: 10px;
-margin-right: 10px;
-margin-bottom: 10px;
-background-color: rgb(111, 187, 241); 
-color: rgb(255, 255, 255);
-text-align: center;
-text-decoration: none; 
-}
-.line2 a:hover{ 
-background-color:rgb(178, 135, 218); 
-color: rgb(63, 21, 101);
-}
-
-p{
-text-align: justify;
-text-indent: 30px;
-color: rgb(85, 25, 141);
-margin-bottom: 10px;
-}
-
-.line3 h2{
-size: 20px;
-font-family: Arial;
-color: rgb(86, 29, 140);
-text-align: center;
-}
-
-.line3{
-margin: 10px;
-}
-.line4{
-    display: flex; 
-    justify-content: space-between;
-    flex-wrap: wrap; 
-    background-color: rgba(203, 172, 232, 0.957); 
-    padding: 20px;
-}
-.line4_block {
-    width: 25%;
-    min-height: 250px;
-    background-color: #ffffff;
-    border: 3px solid #dd5fcc;
-    margin: 10px;
-    padding: 15px;
-    text-align: center;
-    
-}
-
-
-.line4 h2{
-color:rgb(199, 181, 217);
-background:rgb(63, 21, 101);
-font-family: Arial;
-padding: 2px;
-}
-
-.line4 h3{
-color: rgb(63, 21, 101);
-font-family: Arial;
-padding: 5px 0px;
-}
-
-.line4 a{
-width: 350px;
-padding: 5px;
-background-color: rgb(111, 187, 241); 
-color: rgb(255, 255, 255);
-text-align: center;
-text-decoration: none; 
-}
-.line4 a:hover{ 
-background-color:rgb(178, 135, 218); 
-color: rgb(63, 21, 101);
-}
-
-.line4 p{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(119, 60, 173);
-
-}
-.line5 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px;
-    background-color:  rgba(214, 189, 228, 0.896);
-}
-.line5_block {
-    width: 45%;
-    background-color: rgba(214, 189, 228, 0.896);
-    padding: 15px;
-    text-align: center;
-    border-radius: 5px;
-    overflow: hidden;
-}
-.line5 h2 {
-    color: #d5d4d9;
-    background-color: blueviolet;
-}
-.line5 h3 {
-    color: blueviolet;
-}
-.line5 img {
-    float: left;
-    width: 50%;
-    height: auto;
-    margin-top: 10px;
-    margin-right: 15px;
-    border-radius: 4px;
-}
-.line5 a {
-    display: block;
-    width: 150px;
-    margin: 10px auto;
-    padding: 5px;
-    background-color: #928df1;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-.line5 a:hover {
-    background-color: #bb72d5;
-    color: #2e0b3a;
-}
-.line6 {
-    text-align: center;
-    padding: 5px;
-    background-color: blueviolet;
-    color: white;
-    font-size: 30pt;
-}
-.line6 h5 {
-    font-size: 30px;
-    font-weight: normal;
-    letter-spacing: 1px;
-}
-    </style>
-
 <div class="content">
     <div class="line1">
         <div class="line1_block">
             <div class="logo">
-            <img src="img/logo.png">
-        </div>
+                <img src="img/logo.png" alt="Логотип">
+            </div>
             <h1>ДОМАШНІЙ АКВАРІУМ</h1>
             <h2>Твій підводний світ</h2>
         </div>
@@ -225,73 +203,72 @@ color: rgb(63, 21, 101);
         </div>
     </div>
     <div class="line2">
-        <div class="line2_block"><a href="#">Акваріум</a></div>
-        <div class="line2_block"><a href="риби.html">Рибки</a></div>
-        <div class="line2_block"><a href="рослини.html">Рослини</a></div>
-      
+        <a href="#">Акваріум</a>
+        <a href="риби.html">Рибки</a>
+        <a href="рослини.html">Рослини</a>
     </div>
     <div class="line3">
         <h2>Зазирни у інший світ</h2>
-        <p>Море та океан здавна приваблюють людей, відкриваючи їм зовсім інший світ. Незважаючи на те, що цей світ від нас прихований, він вражає свою різнобарвністю, різноманітністю та незвичністю. Кольорові блискучі рибки та інші підводні мешканці, неймовірні корали, відблиски світла на глибині - багатьом дуже подобається ця атмосфера.</p>
-        <p>Кожен акваріум – це маленький світ, зі своїми особливостями, традиціями та історією. Зазирніть у нього та дізнаєтеся, як акваріумні рибки  прикрашають інтер’єр, допомагають відпочити та отримати більше знань про цей Всесвіт.</p>
+        <p>Море та океан здавна приваблюють людей, відкриваючи їм зовсім інший світ. Незважаючи на те, що цей світ від нас прихований, він вражає своєю різнобарвністю та різноманітністю.</p>
+        <p>Кожен акваріум – це маленький світ зі своїми особливостями та історією. Зазирніть у нього та дізнайтеся, як акваріумні рибки прикрашають інтер’єр та допомагають відпочити.</p>
     </div>
     <div class="line4">
         <div class="line4_block">
             <h2>РИБИ</h2>
             <h3>Умови дотримання</h3>
-            <img src="img/picture_1.png">
-            <p>У природних умовах рибки живуть в прісних так в солоних водоймах.</p>
+            <img src="img/picture_1.png" alt="Риби">
+            <p>У природних умовах рибки живуть у прісних та солоних водоймах.</p>
             <a href="#">більше</a>
         </div>
         <div class="line4_block">
             <h2>АКВАРІУМИ</h2>
             <h3>Акваріуми та комплектуючі</h3>
-            <img src="img/picture_2.png">
-            <p>Розведення живності в акваріумі — популярне у світі захоплення.</p>
+            <img src="img/picture_2.png" alt="Акваріуми">
+            <p>Розведення живності в акваріумі — популярне захоплення.</p>
             <a href="#">більше</a>
         </div>
         <div class="line4_block">
             <h2>ДИЗАЙН</h2>
             <h3>Аквадизайн та оформлення</h3>
-            <img src="img/picture_3.png">
+            <img src="img/picture_3.png" alt="Дизайн">
             <p>В акваріумі можна зробити декор на будь-яку тему.</p>
             <a href="#">більше</a>
         </div>
         <div class="line4_block">
             <h2>ОБЛАДНАННЯ</h2>
             <h3>Акваріумне обладнання</h3>
-            <img src="img/picture_4.png">
-            <p>В кожному акваріумі повинні бути: фільтр, освітлення і обігрівач.</p>
+            <img src="img/picture_4.png" alt="Обладнання">
+            <p>Фільтр, освітлення і обігрівач обов’язкові для кожного акваріуму.</p>
             <a href="#">більше</a>
         </div>
         <div class="line4_block">
             <h2>КОРМИ</h2>
             <h3>Харчування для риб</h3>
-            <img src="img/picture_5.png">
-            <p>Різноманітні сухі та морожені корми для ваших улюбленців.</p>
+            <img src="img/picture_5.png" alt="Корм">
+            <p>Різноманітні сухі та морожені корми для ваших риб.</p>
             <a href="#">більше</a>
         </div>
         <div class="line4_block">
             <h2>ПРЕПАРАТИ</h2>
             <h3>Хімічні добавки та ліки</h3>
-            <img src="img/picture_6.png">
-            <p>Найбільш необхідні лікарські препарати для риб.</p>
+            <img src="img/picture_6.png" alt="Препарати">
+            <p>Необхідні лікарські препарати для риб.</p>
             <a href="#">більше</a>
         </div>
     </div>
     <div class="line5">
         <div class="line5_block">
             <h2>ВИБІР АКВАРІУМА</h2>
-            <h3>АКВАРІУМ -НАЙВАЖЛИВІШЕ ПРИДБАНЕ ВАМИ ОБЛАДНАННЯ, ОСКІЛЬКИ ВІН СЛУЖИТИМЕ ВАШИМ РИБАМ ДОМІВКОЮ</h3>
-            <img src="img/foto_2.jpg" align="left">
-            <p>Акваріуміст початківець при вигляді різноманіття акваріумів зазвичай губиться і не в змозі відразу вибрати розмір і форму. Звичайно, ваш вибір буде залежати від фінансових можливостей і доступного простору, але при покупці в першу чергу думайте про благополуччя риб. Ніколи не купуйте акваріум лише тому, що він добре виглядає. Для риб найважливіше значення має простір в акваріумі, адже щільність їх населення в неволі завжди перевищує природню. Відповідно, краще всього купляти найбільший акваріум, який дозволяють вам кошти і вільне місце. Звичайно, маленькі акваріуми коштують менше, але це зовсім не означає, що догляд за ними обійдеться вам дешевше.</p>
+            <h3>Найважливіше придбане обладнання для риб</h3>
+            <img src="img/foto_2.jpg" align="left" alt="Вибір акваріума">
+            <p>Акваріуміст початківець при вигляді різноманіття акваріумів зазвичай губиться і не в змозі відразу вибрати розмір і форму...</p>
             <a href="#">Дізнатися більше</a>
         </div>
         <div class="line5_block">
             <h2>ВИБІР І ПОСЕЛЕННЯ РИБ</h2>
-            <h3>ЯКЩО АКВАРІУМ ПОВНІСТЮ ГОТОВИЙ І ВИ ПЕРЕКОНАЛИСЯ, ЩО ВСЕ ПРАЦЮЄ, МОЖНА ПРИСТУПАТИ ДО ПОСЕЛЕННЯ РИБ.</h3>
-            <img src="img/foto_21.jpg" align="left">
-            <p>Хоча ви можете замовити риб з доставкою додому, краще все-таки відвідати магазин, щоб побачити риб своїми очима, особливо якщо ви новачок. Попросіть досвідчених акваріумістів порекомендувати вам магазин-бажано приналежний до шанованої торгової фірми. Такі магазини зазвичай проводять навчання своїх співробітників, тому ви маєте більше шансів отримати професійну пораду. </p>
+            <h3>Якщо акваріум готовий, можна приступати до поселення риб</h3>
+            <img src="img/foto_21.jpg" align="left" alt="Поселення риб">
+            <p>Хоча ви можете замовити риб з доставкою додому, краще відвідати магазин, щоб побачити риб своїми очима...</p>
             <a href="#">Дізнатися більше</a>
         </div>
     </div>
