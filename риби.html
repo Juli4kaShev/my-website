@@ -6,7 +6,7 @@
     <title>Каталог рибок</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             background-color: #e0f7fa;
             color: #01579b;
             text-align: center;
@@ -36,31 +36,35 @@
         .fish-card h2 {
             margin: 10px 0;
         }
-
-.line2 a{
-display: block;
-flex-direction: row;
-width: 150px;
-padding: 5px;
-margin-left: 10px;
-margin-right: 10px;
-margin-bottom: 10px;
-background-color: rgb(111, 187, 241); 
-color: rgb(255, 255, 255);
-text-align: center;
-text-decoration: none; 
-}
-.line2 a:hover{ 
-background-color:rgb(178, 135, 218); 
-color: rgb(63, 21, 101);
-}
+        .line2 {
+            color: aliceblue;
+            text-align: center;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        .line2 a {
+            display: block;
+            width: 150px;
+            padding: 5px;
+            margin: 0 10px 10px 10px;
+            background-color: rgb(111, 187, 241); 
+            color: white;
+            text-align: center;
+            text-decoration: none; 
+        }
+        .line2 a:hover { 
+            background-color: rgb(178, 135, 218); 
+            color: rgb(63, 21, 101);
+        }
     </style>
 </head>
 <body>
     <h1>Каталог акваріумних рибок</h1>
     <div class="container">
         <div class="fish-card">
-            <img src="https://uspih.in.ua/wp-content/uploads/2024/07/fishclown-1800x900.jpg">
+            <img src="https://uspih.in.ua/wp-content/uploads/2024/07/fishclown-1800x900.jpg" alt="Неонова тетра">
             <h2>Неонова тетра</h2>
             <p>Яскрава маленька рибка з блакитною та червоною смугою.</p>
         </div>
@@ -80,9 +84,8 @@ color: rgb(63, 21, 101);
             <p>Велична рибка з трикутним тілом.</p>
         </div>
     </div>
-    <center>
-        <div class="line2">
-        <a href="index.html">Назад до акваріуму</a></div>
-      </center>
+    <div class="line2">
+        <a href="index.html">Назад до акваріуму</a>
+    </div>
 </body>
 </html>
